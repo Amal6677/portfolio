@@ -18,7 +18,7 @@
     <!-- Nav -->
     <nav id="nav">
       <ul class="container">
-        <li><a href="#top">Top</a></li>
+        <li><a href="#top">About Me</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -37,10 +37,10 @@
               <h1>Hi. I'm <strong>Amal Vijay</strong>.</h1>
             </header>
             <p>
-              Amal Vijay is a <strong>software developer</strong> who has
-              already paved a good professional carrier path. He focuses on
-              variety of different clients providing assistance in the field of
-              coding and the front end development aspect. He is currently
+              I'm a <strong>full stack software developer</strong> who has
+              already paved a good professional carrier path. I focuses on
+              variety of different clients by providing them assistance in the
+              field of back end and front end development aspect. I'm currently
               located in Montreal.
             </p>
             <a href="#work" class="button large scrolly"
@@ -93,7 +93,7 @@
         <footer>
           <p></p>
           <a href="#portfolio" class="button large scrolly"
-            >See some of my recent work</a
+            >See my recent works</a
           >
         </footer>
       </div>
@@ -103,7 +103,7 @@
     <article id="portfolio" class="wrapper style3">
       <div class="container">
         <header>
-          <h2>Here’s some stuff I worked on recently.</h2>
+          <h2>Here’s the stuffs I worked on recently.</h2>
           <p>
             Below are the list of projects i worked in my both academic and
             professional carrier
@@ -216,11 +216,11 @@
     <article id="contact" class="wrapper style4">
       <div class="container medium">
         <header>
-          <h2>Have me make stuff for you.</h2>
+          <h2>Feel free to contact me for any help.</h2>
         </header>
         <div class="row">
           <div class="col-12">
-            <form method="post" action="#">
+            <form method="post" action="javascript:sendMail();">
               <div class="row">
                 <div class="col-6 col-12-small">
                   <input type="text" name="name" id="name" placeholder="Name" />
@@ -308,5 +308,18 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendMail () {
+        debugger
+        Email.send({
+          Host: 'smtp.gmail.com',
+          To: 'amalcvijay9905@gmail.com',
+          From: document.getElementById('email'),
+          Subject: document.getElementById('subject'),
+          Body: document.getElementById('message')
+        }).then(message => alert('mail sent successfully'))
+      }
+    </script>
   </body>
 </html>
