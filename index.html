@@ -103,7 +103,7 @@
     <article id="portfolio" class="wrapper style3">
       <div class="container">
         <header>
-          <h2>Here’s the stuffs I worked on recently.</h2>
+          <h2>Here’s the projects I worked on recently.</h2>
           <p>
             Below are the list of projects i worked in my both academic and
             professional carrier
@@ -127,8 +127,10 @@
                 under the available category
               </p>
               <h5>Technologies</h5>
-              Spring Boot, React.js, MySQL, HTML5, CSS, JavaScript, Jquery,
-              Docker
+              <b>
+                Spring Boot, React.js, MySQL, HTML5, CSS, JavaScript, Jquery,
+                Docker
+              </b>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
@@ -141,8 +143,10 @@
                 details from supplier.
               </p>
               <h5>Technologies</h5>
-              Spring Boot, React.js, MySQL, HTML5, CSS, JavaScript, Kotlin,
-              Jquery
+              <b
+                >Spring Boot, React.js, MySQL, HTML5, CSS, JavaScript, Kotlin,
+                Jquery</b
+              >
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
@@ -168,7 +172,7 @@
                 manipulation and printing reports.
               </p>
               <h5>Technologies</h5>
-              Java Swing Framework, MySQL, Ireport
+              <b>Java Swing, MySQL, Ireport</b>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
@@ -184,7 +188,7 @@
                 searched and retrieved from another API
               </p>
               <h5>Technologies</h5>
-              Node.js, React, HTML5, CSS, MySQL, Javascript, Jquery
+              <b>Node.js, React, HTML5, CSS, MySQL, Javascript, Jquery</b>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
@@ -200,7 +204,7 @@
                 view the teamperature in either kelvin or celsius.
               </p>
               <h5>Technologies</h5>
-              Node.js, HTML5, CSS, MySQL, Javascript, Jquery
+              <b>Node.js, HTML5, CSS, MySQL, Javascript, Jquery</b>
             </article>
           </div>
         </div>
@@ -220,7 +224,7 @@
         </header>
         <div class="row">
           <div class="col-12">
-            <form method="post" action="javascript:sendMail();">
+            <form method="post" action="https://formspree.io/xzbjdorv">
               <div class="row">
                 <div class="col-6 col-12-small">
                   <input type="text" name="name" id="name" placeholder="Name" />
@@ -228,7 +232,7 @@
                 <div class="col-6 col-12-small">
                   <input
                     type="text"
-                    name="email"
+                    name="_replyto"
                     id="email"
                     placeholder="Email"
                   />
@@ -309,17 +313,5 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendMail () {
-        debugger
-        Email.send({
-          Host: 'smtp.gmail.com',
-          To: 'amalcvijay9905@gmail.com',
-          From: document.getElementById('email'),
-          Subject: document.getElementById('subject'),
-          Body: document.getElementById('message')
-        }).then(message => alert('mail sent successfully'))
-      }
-    </script>
   </body>
 </html>
